@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_color_blue"
+            android:minHeight="35dp"
+            android:padding="5dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline19">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                    <Button
+                        android:id="@+id/lastweek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chart_button_unclick"
+                        android:text="上周" />
+
+                    <Button
+                        android:id="@+id/thisweek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chart_button_click"
+                        android:text="这周" />
+                </TableRow>
+
+            </TableLayout>
+
+            <!--<lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/hellochart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1"
+                app:layout_constraintVertical_bias="1.0" />-->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@drawable/chart_button_click"
+                android:elevation="4sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/button_week"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/datepicker_background"-->
+            <!--android:text="周"-->
+            <!--android:textSize="15sp"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/guideline19"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/button_vertical1"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/button_month"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/datepicker_background"-->
+            <!--android:text="月"-->
+            <!--android:textSize="15sp"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/guideline19"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/button_vertical2"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/button_vertical1"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/button_year"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/datepicker_background"-->
+            <!--android:text="年"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="15sp"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/guideline19"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/button_vertical2"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33333" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66666" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal1"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.08" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.49" />
+            <!--<lecho.lib.hellocharts.view.ColumnChartView
+                android:id="@+id/test_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horizontal2" />-->
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.00" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_chart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horizontal2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="start|center_vertical"
+                android:text="本月账单:"
+                android:textSize="25sp"
+                android:background="@drawable/chart_button_unclick"
+                app:layout_constraintBottom_toTopOf="@+id/rv_list_chart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline24" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.38" />
+        </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

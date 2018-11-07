@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">好好记账</string>
+    <string name="surplus_set">请设置预算</string>
+    <!--<string name="date_font"><Data><![CDATA[<font size="20dp"><xliff:g id="alarm" example="Fri 8:30 AM">%1$s</xliff:g></font>8<font size="16dp">月</font> ]]></Data></string>-->
+    <!--<string name="date_font"><![CDATA[<font size="16"><xliff:g id="alarm" example="Fri 8:30 AM">%1$s</xliff:g></font>-->
+        <!--<font size="14">月</font>]]></string>-->
+    <!--<string name="date_font"><xliff:g id="alarm" example="Fri 8:30 AM">%1$s</xliff:g>月</string>-->
+    <string name="record_deals">记录总笔数</string>
+    <string name="record_days">记录总天数</string>
+    <string name="record_money">结余</string>
+    <string name="qiyong">启用手势密码</string>
+    <string name="shoushi">手势密码</string>
+    <string name="signUp">注册</string>
+    <string name="login">登录</string>
+    <string name="head">头像</string>
+    <string name="name">昵称</string>
+    <string name="gender">性别</string>
+    <string name="mail">邮箱</string>
+    <string name="shareKey">分享密钥</string>
+    <string name="personInfo">个人信息</string>
+    <string name="logout">退出登录</string>
+    <string name="draw">绘制你的图案</string>
+    <string name="change">编辑</string>
+    <string name="delete">删除</string>
+    <string name="input">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="email">请输入邮箱</string>
+    <string name="dingshi">定时提醒</string>
+    <!--Loading-->
+    <string name="load_msg">正在加载中&#8230;</string>
+</resources>

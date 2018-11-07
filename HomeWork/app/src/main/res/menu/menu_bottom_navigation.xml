@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_bill"
+        android:enabled="true"
+        android:icon="@drawable/billiconstatus"
+        android:title="账单" />
+    <item
+        android:id="@+id/item_chart"
+        android:enabled="true"
+        android:icon="@drawable/charticonstatus"
+        android:title="图表" />
+
+    <item
+        android:id="@+id/item_mine"
+        android:icon="@drawable/mineiconstatus"
+        android:title="我的" />
+
+
+</menu>

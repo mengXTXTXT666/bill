@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16">
+
+
+        <TableRow
+            android:id="@+id/head_persional"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/head"
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="271dp" />
+
+            <com.tcl.easybill.ui.widget.RoundImageView
+                android:id="@+id/persional_head"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="end|center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                app:type="circle" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/name_persional"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp" />
+
+            <com.tcl.easybill.ui.widget.TextWithImg
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gender_persional"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp" />
+
+            <com.tcl.easybill.ui.widget.TextWithImg
+                android:id="@+id/gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/email_persional"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail"
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp" />
+
+            <com.tcl.easybill.ui.widget.TextWithImg
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/share_account"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="start"
+                android:text="@string/shareKey"
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp" />
+
+            <com.tcl.easybill.ui.widget.TextWithImg
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/personInfo"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_persional"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_persional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/persionalbtn_background"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.86" />
+</android.support.constraint.ConstraintLayout>

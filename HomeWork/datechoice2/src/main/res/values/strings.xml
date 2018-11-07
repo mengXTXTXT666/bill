@@ -1,0 +1,15 @@
+<resources>
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="app_name">日期选择控件</string>
+    <string name="default_money">0.00</string>
+    <string name="type_in">收入</string>
+    <string name="type_out">支出</string>
+</resources>

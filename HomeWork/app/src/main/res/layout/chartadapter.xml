@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingLeft="12dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layout_circle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        >
+        <com.tcl.easybill.ui.widget.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_click"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/circle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@+id/layout_circle"
+        android:layout_marginLeft="11dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black3"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/arrow_right"
+        android:drawablePadding="5dp"
+        android:textColor="@color/text_black3"
+        android:textSize="13sp"/>
+
+</RelativeLayout>
+
+
